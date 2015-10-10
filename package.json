@@ -1,0 +1,24 @@
+{
+  "name": "dot-extend",
+  "version": "1.0.1",
+  "description": "Node. Js dot template, expanded the template include method of nested folders, cache and expiration time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antianlu/dot.git"
+  },
+  "keywords": [
+    "dot",
+    "template",
+    "node.js"
+  ],
+  "author": "antianlu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antianlu/dot/issues"
+  },
+  "homepage": "https://github.com/antianlu/dot#readme"
+}
