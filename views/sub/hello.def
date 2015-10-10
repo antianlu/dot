@@ -1,0 +1,8 @@
+
+<br>
+This is a small block. HELLO.DEF
+<br>
+
+{{=it.content}}
+
+<br>
