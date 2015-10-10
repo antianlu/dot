@@ -3,7 +3,7 @@ node.js dot template,expend use include embed some .def files , and use cache ,e
 
 ##How to use?
 
-    var dot = require('dot');
+    var dot = require('dot-extend');
     
     app.set('views', settings.views_dir);      
     app.set('view engine', 'dot');      
