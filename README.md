@@ -48,16 +48,17 @@ but has sub folder must be use def._include function .
     <br>
     This is footer block.
     
-## list
-dot is engine,def is code block or common code segment.
-    views
-        sub
-            test.dot
-            hello.def
-        index.dot
-        header.def
-        footer.def
+## folder list
+dot is engine,def is code block or common code segment.  
 
+    views  
+        sub  
+            test.dot  
+            hello.def  
+        index.dot  
+        header.def  
+        footer.def  
+`
 
 ## express route
 render name only use .dot file.
