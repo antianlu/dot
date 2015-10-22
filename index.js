@@ -118,44 +118,41 @@ InstallDots.prototype.compileAll = function () {
 
     var defFolder = this.__path, self = this;
 
-    function allIncludeFiles(profix, path_dir) {
-
+    function allIncludeFiles(path_dir) {
         var sources = fs.readdirSync(path_dir),
-            k, l, name, vname;
+            k, l, name, kname;
         for (k = 0, l = sources.length; k < l; k++) {
             name = sources[k];
             if (/\.def(\.dot|\.jst)?$/.test(name)) {
-                vname = (profix ? (profix + '/') : '') + name.substring(0, name.indexOf('.'))
-                self.__includes[vname] = readdata(path_dir + name);
+                kname = path_dir != defFolder ? (path_dir.split(defFolder)[1] + name) : name;
+                self.__includes[kname] = readdata(path_dir + name);
             }
             if (name.indexOf('.') == -1 && fs.existsSync(path_dir + name)) {
-                allIncludeFiles(name, path_dir + name + '/');
+                allIncludeFiles(path_dir + name + '/');
             }
         }
     }
 
     this.__includes._include = function (fname) {
+        // fname: sub/hello,footer,sub/footer,sub/footer.def
         var ext = path.extname(fname);
-        var sortPath = (ext ? fname.substring(0, fname.indexOf('.')) : fname)
-        var p = defFolder + fname + (ext ? ext : '');
-        //console.log(ext,sortPath,p,'--------',inc[sortPath])
-        if (self.__includes[sortPath])
-            return self.__includes[sortPath];
+        fname = ext ? fname : fname + '.def';
+        if (self.__includes[fname])
+            return self.__includes[fname];
         else
-            return readdata(p);
+            return readdata(fname);
     }
 
-    function allRenderFiles(profix, path_dir) {
+    function allRenderFiles(path_dir) {
 
         var sources = fs.readdirSync(path_dir),
-            k, l, name, vname;
+            k, l, name, vname, kname;
         for (k = 0, l = sources.length; k < l; k++) {
             name = sources[k];
             if (/\.dot(\.def|\.jst)?$/.test(name)) {
-                vname = (profix ? (profix + '/') : '') + name.substring(0, name.indexOf('.'))
-                console.log("Compiling " + vname + " to function");
-
-                self.__rendermodule[vname] = self.compilePath(path_dir + name);
+                kname = path_dir != defFolder ? (path_dir.split(defFolder)[1] + name) : name;
+                console.log("Compiling " + kname + " to function");
+                self.__rendermodule[kname] = self.compilePath(path_dir + name);
             }
             if (/\.jst(\.dot|\.def)?$/.test(name)) {
                 console.log("Compiling " + name + " to file");
@@ -163,39 +160,39 @@ InstallDots.prototype.compileAll = function () {
                     readdata(defFolder + name));
             }
             if (name.indexOf('.') == -1 && fs.existsSync(path_dir + name)) {
-                allRenderFiles(name, path_dir + name + '/');
+                allRenderFiles(path_dir + name + '/');
             }
         }
     }
 
-    allIncludeFiles('', defFolder);
-    allRenderFiles('', defFolder);
+    allIncludeFiles(defFolder);
+    allRenderFiles(defFolder);
     return this.__rendermodule;
 };
 
 doT.__express = function (config) {
-    var config = config || {};
-    dt = new InstallDots(config).compileAll();
+    var config = config || {},
+        viewPath = /\/$/.test(config.path) ? config.path : config.path + '/',
+        dt = new InstallDots(config).compileAll();
     return function (filePath, options, cb) {
-        cb = ('function' == typeof cb) ? cb : function () {
-        };
-        if (!filePath) return cb('file name is null', null);
-        var pathName = filePath.split(config.path + '/')[1],
-            key = pathName.substring(0, pathName.indexOf('.'));
+        var key, _html;
+        if (!(/\.dot$/.test(filePath))) throw Error('extension must be is .dot');
+        key = filePath.split(viewPath)[1];
+        console.log(key, 'filepath')
         if (config.cache) {
             if (!templateCaches[key]) {
-                var temp_html = dt[key](options);
+                _html = dt[key](options);
                 console.log(key, ' do cache')
-                templateCaches[key] = temp_html;
-                return cb(null, temp_html);
+                templateCaches[key] = _html;
+                return cb(null, _html);
             }
             else {
                 console.log(key, ' from cache')
                 return cb(null, templateCaches[key]);
             }
         }
-        var _html = dt[key](options);
-        console.log('no cache ')
+        _html = dt[key](options);
+        console.log(key, ' from no cache ')
         return cb(null, _html);
     };
 };

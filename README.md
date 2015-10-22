@@ -9,7 +9,7 @@ node.js dot template,expend use include embed some .def files , and use cache ,e
     app.set('view engine', 'dot');      
     app.engine('dot', dot.__express({  
         path: app.get('views'),  
-        cache: true  //use cache
+        cache: true  //use all dot page cache
     })); 
     
     
@@ -36,6 +36,7 @@ or you can use like this get common code block.
     {{#def.footer}}
 
 but has sub folder must be use def._include function .
+
 ##header.def
 
     <head lang="en">
@@ -54,14 +55,19 @@ dot is engine,def is code block or common code segment.
     views  
         sub  
             test.dot  
-            hello.def  
+            hello.def
+        sub1
+            test1.def
         index.dot  
         header.def  
         footer.def  
 `
+if you want to at sub's folder use test1.def please like this use it.
+    {{#def._include('sub1/test1)}} or sub1/test1.def
+not like `def._include('../sub1/test1')
 
 ## express route
-render name only use .dot file.
+render name must be use .dot file.
     
     app.get('/index', function (req, res, next) {
         res.render('index', {title: 'index template', content: 'index doT content render'});
