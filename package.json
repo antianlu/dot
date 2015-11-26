@@ -1,6 +1,6 @@
 {
   "name": "dot-extend",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Node. Js dot template, expanded the template include method of nested folders, cache and expiration time.",
   "main": "index.js",
   "scripts": {

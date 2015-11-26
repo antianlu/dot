@@ -61,10 +61,12 @@ dot is engine,def is code block or common code segment.
         index.dot  
         header.def  
         footer.def  
-`
+
 if you want to at sub's folder use test1.def please like this use it.
-    {{#def._include('sub1/test1)}} or sub1/test1.def
-not like `def._include('../sub1/test1')
+
+    {{#def._include('sub1/test1')}} or sub1/test1.def
+
+    not like `def._include('../sub1/test1')
 
 ## express route
 render name must be use .dot file.

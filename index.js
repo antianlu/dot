@@ -172,13 +172,12 @@ InstallDots.prototype.compileAll = function () {
 
 doT.__express = function (config) {
     var config = config || {},
-        viewPath = /\/$/.test(config.path) ? config.path : config.path + '/',
+        viewPath = config.path,
         dt = new InstallDots(config).compileAll();
     return function (filePath, options, cb) {
         var key, _html;
         if (!(/\.dot$/.test(filePath))) throw Error('extension must be is .dot');
-        key = filePath.split(viewPath)[1];
-        console.log(key, 'filepath')
+        key = filePath.split(viewPath)[1].replace(/^(\/|\\)/,'').replace(/\\/g,'/');
         if (config.cache) {
             if (!templateCaches[key]) {
                 _html = dt[key](options);
