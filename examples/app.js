@@ -16,6 +16,23 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'dot');
 
+//dot config
+//dot.templateSettings = {
+//  evaluate: /\{\%([\s\S]+?(\}?)+)\%\}/g,
+//  interpolate: /\{\%=([\s\S]+?)\%\}/g,
+//  encode: /\{\%!([\s\S]+?)\%\}/g,
+//  use: /\{\%#([\s\S]+?)\%\}/g,
+//  useParams: /(^|[^\w$])def(?:\.|\[[\'\"])([\w$\.]+)(?:[\'\"]\])?\s*\:\s*([\w$\.]+|\"[^\"]+\"|\'[^\']+\'|\{[^\}]+\})/g,
+//  define: /\{\%##\s*([\w\.$]+)\s*(\:|=)([\s\S]+?)#\%\}/g,
+//  defineParams: /^\s*([\w$]+):([\s\S]+)/,
+//  conditional: /\{\%\?(\?)?\s*([\s\S]*?)\s*\%\}/g,
+//  iterate: /\{\%~\s*(?:\%\}|([\s\S]+?)\s*\:\s*([\w$]+)\s*(?:\:\s*([\w$]+))?\s*\%\})/g,
+//  varname: "it",
+//  strip: true,
+//  append: true,
+//  selfcontained: false,
+//  doNotSkipEncoded: false
+//};
 // config path params is templates path,you use array or string
 // carefully the path order
 app.engine('dot', dot.__express({

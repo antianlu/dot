@@ -1,13 +1,13 @@
-{%##def.base:
+{{##def.base:
     <meta charset="UTF-8">
-    <title>凤凰金融-{%#def.title||'积分商城'%}</title>
+    <title>凤凰金融-{{#def.title||'积分商城'}}</title>
     <meta name="description" content="xxx">
     <meta name="keywords" content="">
-    {%#def.meta || ''%}
+    {{#def.meta || ''}}
     <script>
-        {%= it.state %}
+        {{= it.state }}
     </script>
     <link rel="stylesheet" href="/assets/css/common.css"/>
-    {%#def.head||''%}
-#%}
-{%#def.base%}
+    {{#def.head||''}}
+#}}
+{{#def.base}}
