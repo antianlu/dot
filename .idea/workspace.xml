@@ -2,42 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d22df75-7785-49d5-85d9-9b243d08dae2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/both/tpl/404.dot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/views/404.dot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/both/tpl/500.dot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/views/500.dot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/both/tpl/demo.def" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/views/demo.dot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/both/tpl/footer.def" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/views/common/footer.def" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/views/common/head.def" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/both/tpl/header.def" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/views/index.dot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/routes/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/views/common/layout.def" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/views/common/nav.def" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/routes/users.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/bin/www" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/advancedsnippet.txt" afterPath="$PROJECT_DIR$/examples-original/advancedsnippet.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/browsersample.html" afterPath="$PROJECT_DIR$/examples-original/browsersample.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/customdoT.js" afterPath="$PROJECT_DIR$/examples-original/customdoT.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/express/index.js" afterPath="$PROJECT_DIR$/examples-original/express/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/express/lib/app.js" afterPath="$PROJECT_DIR$/examples-original/express/lib/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/express/lib/render/index.js" afterPath="$PROJECT_DIR$/examples-original/express/lib/render/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/express/package.json" afterPath="$PROJECT_DIR$/examples-original/express/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/express/templates/dashboard.jst" afterPath="$PROJECT_DIR$/examples-original/express/templates/dashboard.jst" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/express/templates/login.jst" afterPath="$PROJECT_DIR$/examples-original/express/templates/login.jst" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/snippet.txt" afterPath="$PROJECT_DIR$/examples-original/snippet.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/views/multidef.def.jst" afterPath="$PROJECT_DIR$/examples-original/views/multidef.def.jst" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/views/one.def" afterPath="$PROJECT_DIR$/examples-original/views/one.def" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/views/two.dot.jst" afterPath="$PROJECT_DIR$/examples-original/views/two.dot.jst" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/withdoT.js" afterPath="$PROJECT_DIR$/examples-original/withdoT.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.13432837">
-              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+            <state vertical-scroll-proportion="-4.75">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -148,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.76">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.20246914">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -635,18 +601,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.76">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.75">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.13432837">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.20246914">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>

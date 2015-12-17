@@ -4,7 +4,7 @@ node.js's dot.js template,expend use include embed some .def files , and use cac
 ## install
     npm install dot-extend
 
-##How to use?
+## How to use?
 
     var dot = require('dot-extend');
 
@@ -23,9 +23,9 @@ node.js's dot.js template,expend use include embed some .def files , and use cac
 	// Note the Chinese:
 	// 1.0.7版本支持多路径模板，path配置可为数组（支持多路径指定）或字符串为一个路径下比如views，应为为完整路径。
 
-
-##Note
-
+    
+## Note
+    
 If you are using. Def as a template file, the nested folders, to start from the most superior to find files    
 如果使用.def作为模板文件时，嵌套文件夹的情况，要从最上级开始往下查找文件
 
@@ -38,11 +38,15 @@ If you are using. The dot file as a nested template, please add. Dot suffix
 
 	{{#def._include('demo.dot')}}
 
-##Advanced
+
+    
+## Advanced
+
 Please see example senior use example, development and application in actual project.        
 请查看example的高级使用列子,在实际项目中的开发应用   
 
 ## express route
+
 render name must be use .dot file.
     
     app.get('/index', function (req, res, next) {
