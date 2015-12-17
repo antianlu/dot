@@ -40,12 +40,14 @@ function InstallDots(o) {
     this.__path = o.path || "./";
     if (Array.isArray(this.__path)) {
         for (var i = 0, len = this.__path.length; i < len; i++) {
+            this.__path[i] = this.__path[i].replace(/\\/g,'/');
             if (this.__path[i][this.__path[i].length - 1] !== '/') this.__path[i] += '/';
             this.__destination = o.destination || this.__path;
             if (this.__destination[i][this.__destination[i].length - 1] !== '/') this.__destination[i] += '/';
         }
     }
     else {
+        this.__path = this.__path.replace(/\\/g,'/');
         if (this.__path[this.__path.length - 1] !== '/') this.__path += '/';
         this.__destination = o.destination || this.__path;
         if (this.__destination[this.__destination.length - 1] !== '/') this.__destination += '/';
@@ -150,7 +152,6 @@ InstallDots.prototype.compileAll = function () {
     }
 
     function doCompaile(rootFolder, path_dir) {
-        console.log(rootFolder, path_dir);
         var sources = fs.readdirSync(path_dir),
             k, l, name, kname;
         for (k = 0, l = sources.length; k < l; k++) {
@@ -188,6 +189,7 @@ doT.__express = function (config) {
         dt = new InstallDots(config).compileAll();
     return function (filePath, options, cb) {
         var key, _html;
+        filePath = filePath.replace(/\\/g, '/');
         if (!(/\.dot$/.test(filePath))) throw Error('extension must be is .dot');
         for (var i = 0; i < viewPaths.length; i++) {
             if (filePath.split(viewPaths[i]).length > 1) {
