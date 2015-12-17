@@ -1,72 +1,46 @@
 # dot
-node.js dot template,expend use include embed some .def files , and use cache ,expire. express 4.x.x support.
+node.js's dot.js template,expend use include embed some .def files , and use cache(static cache),express 4.x.x support.
+    
+## install
+    npm install dot-extend
 
 ##How to use?
 
     var dot = require('dot-extend');
-    
-    app.set('views', settings.views_dir);      
-    app.set('view engine', 'dot');      
-    app.engine('dot', dot.__express({  
-        path: app.get('views'),  
-        cache: true  //use all dot page cache
-    })); 
-    
-    
-## index.dot
-    <!DOCTYPE html>
-    <html>
 
-    {{#def._include('header')}}
+    var app = express();
 
-    <body>
+	// view engine setup
+	app.set('views', path.join(__dirname, 'views'));
+	app.set('view engine', 'dot');
 
-    This is content.{{=it.content}}
-    <br>
+	// config path params is templates path,you use array 		or string
+	// Note that the path is order >=1.0.7
+	app.engine('dot', dot.__express({
+		path:[path.join(__dirname,'both'),app.get('views')],// or string(one path)
+		cache: false// use static page,warming
+	}));
+	// Note the Chinese:
+	// 1.0.7版本支持多路径模板，path配置可为数组（支持多路径指定）或字符串为一个路径下比如views，应为为完整路径。
 
-    {{#def._include('sub/hello')}}
 
-    {{#def._include('footer')}}
+##Note
 
-    </body>
-    </html>
-
-or you can use like this get common code block.
-
-    {{#def.footer}}
-
-but has sub folder must be use def._include function .
-
-##header.def
-
-    <head lang="en">
-        <meta charset="UTF-8">
-        <title>{{=it.title}}</title>
-    </head>
-    
-##footer.def
-    
-    <br>
-    This is footer block.
-    
-## folder list
-dot is engine,def is code block or common code segment.  
-
-    views  
-        sub  
-            test.dot  
-            hello.def
-        sub1
-            test1.def
-        index.dot  
-        header.def  
-        footer.def  
-
-if you want to at sub's folder use test1.def please like this use it.
+If you are using. Def as a template file, the nested folders, to start from the most superior to find files    
+如果使用.def作为模板文件时，嵌套文件夹的情况，要从最上级开始往下查找文件
 
     {{#def._include('sub1/test1')}} or sub1/test1.def
 
-    not like `def._include('../sub1/test1')
+    def._include('../sub1/test1') // This is wrong
+
+If you are using. The dot file as a nested template, please add. Dot suffix    
+如果文件作为嵌套模板，请加上.dot后缀名
+
+	{{#def._include('demo.dot')}}
+
+##Advanced
+Please see example senior use example, development and application in actual project.        
+请查看example的高级使用列子,在实际项目中的开发应用   
 
 ## express route
 render name must be use .dot file.

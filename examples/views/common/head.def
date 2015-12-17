@@ -1,0 +1,13 @@
+{%##def.base:
+    <meta charset="UTF-8">
+    <title>凤凰金融-{%#def.title||'积分商城'%}</title>
+    <meta name="description" content="xxx">
+    <meta name="keywords" content="">
+    {%#def.meta || ''%}
+    <script>
+        {%= it.state %}
+    </script>
+    <link rel="stylesheet" href="/assets/css/common.css"/>
+    {%#def.head||''%}
+#%}
+{%#def.base%}

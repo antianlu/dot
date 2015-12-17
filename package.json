@@ -1,7 +1,7 @@
 {
   "name": "dot-extend",
-  "version": "1.0.6",
-  "description": "Node. Js dot template, expanded the template include method of nested folders, cache and expiration time.",
+  "version": "1.0.8",
+  "description": "Node.Js dot template, expanded the template include method of nested folders, static cache and use express 4.x.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

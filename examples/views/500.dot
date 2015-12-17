@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>500-服务器错误</title>
+    <link rel="stylesheet" href="/assets/css/common.css"/>
+</head>
+<body>
+<div class="container">
+    <div style="margin-top:6%; position: relative;padding-left:20%;vertical-align: middle">
+        <img src="/assets/images/base/icon_color_500.png" alt=""/>
+
+        <div style="position: absolute;top:46%;left:50%">
+            <h3>Un Oh...</h3>
+
+            <p>服务器正在更新，请您稍后再试。</p>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

@@ -38,9 +38,20 @@ var fs = require("fs"),
 
 function InstallDots(o) {
     this.__path = o.path || "./";
-    if (this.__path[this.__path.length - 1] !== '/') this.__path += '/';
-    this.__destination = o.destination || this.__path;
-    if (this.__destination[this.__destination.length - 1] !== '/') this.__destination += '/';
+    if (Array.isArray(this.__path)) {
+        for (var i = 0, len = this.__path.length; i < len; i++) {
+            if (this.__path[i][this.__path[i].length - 1] !== '/') this.__path[i] += '/';
+            this.__destination = o.destination || this.__path;
+            if (this.__destination[i][this.__destination[i].length - 1] !== '/') this.__destination[i] += '/';
+        }
+    }
+    else {
+        if (this.__path[this.__path.length - 1] !== '/') this.__path += '/';
+        this.__destination = o.destination || this.__path;
+        if (this.__destination[this.__destination.length - 1] !== '/') this.__destination += '/';
+    }
+    //this.__destination = o.destination || this.__path;
+    //if (this.__destination[this.__destination.length - 1] !== '/') this.__destination += '/';
     this.__global = o.global || "window.render";
     this.__rendermodule = o.rendermodule || {};
     this.__settings = o.templateSettings ? copy(o.templateSettings, copy(doT.templateSettings)) : undefined;
@@ -116,23 +127,8 @@ InstallDots.prototype.compilePath = function (path) {
 InstallDots.prototype.compileAll = function () {
     console.log("Compiling all doT templates...");
 
-    var defFolder = this.__path, self = this;
-
-    function allIncludeFiles(path_dir) {
-        var sources = fs.readdirSync(path_dir),
-            k, l, name, kname;
-        for (k = 0, l = sources.length; k < l; k++) {
-            name = sources[k];
-            if (/\.def(\.dot|\.jst)?$/.test(name)) {
-                kname = path_dir != defFolder ? (path_dir.split(defFolder)[1] + name) : name;
-                self.__includes[kname] = readdata(path_dir + name);
-            }
-            if (name.indexOf('.') == -1 && fs.existsSync(path_dir + name)) {
-                allIncludeFiles(path_dir + name + '/');
-            }
-        }
-    }
-
+    //var defFolder = this.__path, self = this;
+    var paths = this.__path, self = this;
     this.__includes._include = function (fname) {
         // fname: sub/hello,footer,sub/footer,sub/footer.def
         var ext = path.extname(fname);
@@ -141,57 +137,78 @@ InstallDots.prototype.compileAll = function () {
             return self.__includes[fname];
         else
             return readdata(fname);
+    };
+
+    if (Array.isArray(paths)) {
+        for (var i = 0, len = paths.length; i < len; i++) {
+            var rootFolder = paths[i];
+            doCompaile(rootFolder, rootFolder)
+        }
+    }
+    else {
+        doCompaile(paths, paths)
     }
 
-    function allRenderFiles(path_dir) {
-
+    function doCompaile(rootFolder, path_dir) {
+        console.log(rootFolder, path_dir);
         var sources = fs.readdirSync(path_dir),
-            k, l, name, vname, kname;
+            k, l, name, kname;
         for (k = 0, l = sources.length; k < l; k++) {
             name = sources[k];
-            if (/\.dot(\.def|\.jst)?$/.test(name)) {
-                kname = path_dir != defFolder ? (path_dir.split(defFolder)[1] + name) : name;
+            if (/\.def(\.dot|\.jst)?$/.test(name)) {
+                kname = path_dir != rootFolder ? (path_dir.split(rootFolder)[1] + name) : name;
                 console.log("Compiling " + kname + " to function");
+                self.__includes[kname] = readdata(path_dir + name);
+            }
+
+            if (/\.dot(\.def|\.jst)?$/.test(name)) {
+                kname = path_dir != rootFolder ? (path_dir.split(rootFolder)[1] + name) : name;
+                console.log("Compiling " + kname + " to function");
+                self.__includes[kname] = readdata(path_dir + name);
                 self.__rendermodule[kname] = self.compilePath(path_dir + name);
             }
             if (/\.jst(\.dot|\.def)?$/.test(name)) {
                 console.log("Compiling " + name + " to file");
-                self.compileToFile(self.__destination + name.substring(0, name.indexOf('.')) + '.js',
-                    readdata(defFolder + name));
+                self.compileToFile(path_dir + name.substring(0, name.indexOf('.')) + '.js',
+                    readdata(path_dir + name));
             }
+
             if (name.indexOf('.') == -1 && fs.existsSync(path_dir + name)) {
-                allRenderFiles(path_dir + name + '/');
+                doCompaile(rootFolder, path_dir + name + '/');
             }
         }
     }
 
-    allIncludeFiles(defFolder);
-    allRenderFiles(defFolder);
     return this.__rendermodule;
 };
 
 doT.__express = function (config) {
     var config = config || {},
-        viewPath = config.path,
+        viewPaths = config.path,
         dt = new InstallDots(config).compileAll();
     return function (filePath, options, cb) {
         var key, _html;
         if (!(/\.dot$/.test(filePath))) throw Error('extension must be is .dot');
-        key = filePath.split(viewPath)[1].replace(/^(\/|\\)/,'').replace(/\\/g,'/');
+        for (var i = 0; i < viewPaths.length; i++) {
+            if (filePath.split(viewPaths[i]).length > 1) {
+                key = filePath.split(viewPaths[i])[1].replace(/^(\/|\\)/, '').replace(/\\/g, '/');
+                break;
+            }
+        }
         if (config.cache) {
             if (!templateCaches[key]) {
                 _html = dt[key](options);
-                console.log(key, ' do cache')
+                //console.log(key, ' do cache')
                 templateCaches[key] = _html;
                 return cb(null, _html);
             }
             else {
-                console.log(key, ' from cache')
+                //console.log(key, ' from cache')
                 return cb(null, templateCaches[key]);
             }
         }
         _html = dt[key](options);
-        console.log(key, ' from no cache ')
+        //console.log(key, ' from no cache ')
         return cb(null, _html);
     };
 };
