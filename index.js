@@ -144,14 +144,14 @@ InstallDots.prototype.compileAll = function () {
     if (Array.isArray(paths)) {
         for (var i = 0, len = paths.length; i < len; i++) {
             var rootFolder = paths[i];
-            doCompaile(rootFolder, rootFolder)
+            doCompaileDef(rootFolder, rootFolder),doCompaileDot(rootFolder, rootFolder)
         }
     }
     else {
-        doCompaile(paths, paths)
+        doCompaileDef(paths, paths),doCompaileDot(paths, paths)
     }
 
-    function doCompaile(rootFolder, path_dir) {
+    function doCompaileDef(rootFolder, path_dir) {
         var sources = fs.readdirSync(path_dir),
             k, l, name, kname;
         for (k = 0, l = sources.length; k < l; k++) {
@@ -161,7 +161,17 @@ InstallDots.prototype.compileAll = function () {
                 console.log("Compiling " + kname + " to function");
                 self.__includes[kname] = readdata(path_dir + name);
             }
+            if (name.indexOf('.') == -1 && fs.existsSync(path_dir + name)) {
+                doCompaileDef(rootFolder, path_dir + name + '/');
+            }
+        }
+    }
 
+    function doCompaileDot(rootFolder, path_dir) {
+        var sources = fs.readdirSync(path_dir),
+            k, l, name, kname;
+        for (k = 0, l = sources.length; k < l; k++) {
+            name = sources[k];
             if (/\.dot(\.def|\.jst)?$/.test(name)) {
                 kname = path_dir != rootFolder ? (path_dir.split(rootFolder)[1] + name) : name;
                 console.log("Compiling " + kname + " to function");
@@ -175,7 +185,7 @@ InstallDots.prototype.compileAll = function () {
             }
 
             if (name.indexOf('.') == -1 && fs.existsSync(path_dir + name)) {
-                doCompaile(rootFolder, path_dir + name + '/');
+                doCompaileDot(rootFolder, path_dir + name + '/');
             }
         }
     }
@@ -191,11 +201,17 @@ doT.__express = function (config) {
         var key, _html;
         filePath = filePath.replace(/\\/g, '/');
         if (!(/\.dot$/.test(filePath))) throw Error('extension must be is .dot');
-        for (var i = 0; i < viewPaths.length; i++) {
-            if (filePath.split(viewPaths[i]).length > 1) {
-                key = filePath.split(viewPaths[i])[1].replace(/^(\/|\\)/, '').replace(/\\/g, '/');
-                break;
+        if(Array.isArray(viewPaths)){
+            for (var i = 0; i < viewPaths.length; i++) {
+                if (filePath.split(viewPaths[i]).length > 1) {
+                    key = filePath.split(viewPaths[i])[1].replace(/^(\/|\\)/, '').replace(/\\/g, '/');
+                    break;
+                }
             }
+        }
+        else
+        {
+            key = filePath.split(viewPaths)[1].replace(/^(\/|\\)/, '').replace(/\\/g, '/');
         }
         if (config.cache) {
             if (!templateCaches[key]) {
