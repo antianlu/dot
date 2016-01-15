@@ -201,18 +201,22 @@ doT.__express = function (config) {
         var key, _html;
         filePath = filePath.replace(/\\/g, '/');
         if (!(/\.dot$/.test(filePath))) throw Error('extension must be is .dot');
+        var tmp;
         if(Array.isArray(viewPaths)){
             for (var i = 0; i < viewPaths.length; i++) {
-                if (filePath.split(viewPaths[i]).length > 1) {
-                    key = filePath.split(viewPaths[i])[1].replace(/^(\/|\\)/, '').replace(/\\/g, '/');
+                tmp = viewPaths[i].replace(/\\/g, '/');
+                if (filePath.split(tmp).length > 1) {
+                    key = filePath.split(tmp)[1].replace(/^(\/|\\)/, '');
                     break;
                 }
             }
         }
         else
         {
-            key = filePath.split(viewPaths)[1].replace(/^(\/|\\)/, '').replace(/\\/g, '/');
+            tmp = viewPaths.replace(/\\/g, '/');
+            key = filePath.split(tmp)[1].replace(/^(\/|\\)/, '');
         }
+        // 针对寸静态，只加载绑定一次数据
         if (config.cache) {
             if (!templateCaches[key]) {
                 _html = dt[key](options);
