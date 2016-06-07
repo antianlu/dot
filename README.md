@@ -56,3 +56,8 @@ render name must be use .dot file.
     app.get('/test', function (req, res, next) {
         res.render('sub/test', {title: 'test template', content: 'test doT content render'});
     });
+
+
+#v1.1.5 fixed a bug
+
+fixed use {{#def.demo}} get demo.def bug.

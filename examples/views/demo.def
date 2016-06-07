@@ -2,5 +2,4 @@
     {{=it.demo}}
     test dot include dot template.
     <p>if use dot please add suffix .dot </p>
-    {{#def._include('demo.dot')}}
 </div>
