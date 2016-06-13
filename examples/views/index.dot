@@ -1,26 +1,14 @@
-{{#def._include('common/layout')}}
-<!--扩展head css,##包含的代码块无顺序可言-->
-{{##def.head:
-#}}
+{%#def._include('common/layout')%}
 
-<!--开发区主要内容-->
-{{##def.main:
+{%##def.title=''#%}
 
-<a href="http://www.fengjr.com">凤凰金融</a>
-<a href="http://mall.fengjr.com">dot模板在凤凰金融积分商城的使用例子</a>
+{%##def.head:
+<link rel="stylesheet" href="/assets/css/xx.css"/>
+#%}
 
-{{ var obj = {demo:'xxxxxxx'};}}
-{{=JSON.stringify(obj)}}
-{{#def.demo:obj}}
+{%##def.main:
+<div class="div" style="height:300px;">This is index page</div>
+#%}
 
-{{#def._include('common/footer')}}
-
-
-{{#def._include('demo')}}
-
-#}}
-
-
-<!--每个页面扩展或单独加入js文件或代码块-->
-{{##def.script:
-#}}
+{%##def.script:
+#%}

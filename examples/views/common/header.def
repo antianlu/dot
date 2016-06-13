@@ -1,0 +1,132 @@
+<div class="header">
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-l">
+        <span>客服电话：400 xxx xxx</span>
+      </div>
+      <div class="top-bar-r">
+        <ul class="top-bar-list clearfix">
+          {%? !it.user%}
+          <li class="top-bar-item">
+            <a href="javascript:;" onclick = "toLogin();">立即登录</a>
+          </li>
+          <li class="top-bar-item">
+            <a href="{%=redirect.main('/register')%}">快速注册</a>
+          </li>
+          {%??%}
+          <li class="top-bar-item">
+            <span>{%=it.user.nickname || it.user.loginName%}</span>
+            <a href="{%=redirect.main('/logout')%}">退出</a>
+          </li>
+          {%?%}
+          <li class="top-bar-item">
+            <a href="{%=redirect.main('/service/jr')%}">帮助中心</a>
+          </li>
+          <li class="top-bar-item top-bar-menu">
+            <a href="{%=redirect.main('/safety')%}">
+              <span>安全保障</span>
+              <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="safety-menu">
+              <li><a href="{%=redirect.main('/safety')%}">安全保障措施</a></li>
+              <li><a href="{%=redirect.main('/financing/jgdetail')%}">保障机构介绍</a></li>
+            </ul>
+          </li>
+          <li class="top-bar-item top-bar-menu">
+            <a href="{%=redirect.main('/specialTopic/fengapp')%}" target="_blank">下载APP</a>
+            <ul class="app-menu">
+              <li>
+                <img src="/assets/images/base/download_app.jpg" alt="扫码下载">
+              </li>
+              <li>
+                <a href="{%=redirect.main('/specialTopic/fengapp')%}" target="_blank">凤凰金融APP</a>
+              </li>
+            </ul>
+          </li>
+          <li class="top-bar-item">
+            <a href="http://weibo.com/fenghuangjinrong" target="_blank" class="fa fa-weibo"></a>
+          </li>
+          <li class="top-bar-item top-bar-menu top-bar-sm">
+            <a href="javascript:;" class="fa fa-wechat"></a>
+            <ul class="weixin-menu">
+              <li><img src="/assets/images/base/top_bar_weixing.jpg" alt="微信二维码"></li>
+              <li><a href="javascript:;">凤凰金融微信</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="main-nav-wrapper" style="height:70px;">
+    <div class="main-nav">
+      <div class="container clearfix">
+        <div class="main-nav-logo">
+          <a href="{%=redirect.main('/')%}" style="width:319px;display: inline-block">
+            <!--<img src="/assets/images/base/logo.png" st alt="">-->
+          </a>
+          <h1 style="display:none;">懂你</h1>
+        </div>
+        <div role="navigation" un-id="" u-host="" u-currenturl="/" u-p-id=""
+             class="p2p-navbar pull-left public-messagee-user" style="display:none;"></div>
+        <ul class="main-menu-lst clearfix">
+          <li class="main-menu-item ">
+            <a href="{%=redirect.main('/')%}" class="main-url">首页</a>
+          </li>
+          <li
+              class="main-menu-item main-menu-slide">
+            <a href="{%=redirect.main('/financing')%}" class="main-url">
+              <span>理财</span>
+              <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <i class="line"></i>
+                <a href="{%=redirect.bx('/current')%}" target="_blank">活期理财</a>
+              </li>
+              <li>
+                <a href="{%=redirect.main('/financing')%}" target="_blank">定期理财</a>
+              </li>
+              <li>
+                <a href="{%=redirect.bx('/')%}" target="_blank">保险理财</a>
+              </li>
+              <li>
+                <a href="{%=redirect.main('/financing/list?type=newUser')%}" target="_blank">新手专享</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-menu-item ">
+            <a href="{%=redirect.fund('/')%}" class="main-url">基金</a>
+          </li>
+          <li class="main-menu-item">
+            <a href="{%=redirect.main('/zc')%}" class="main-url">众筹</a>
+          </li>
+          <li class="main-menu-item main-menu-slide">
+            <a href="{%=redirect.main('/financing')%}" class="main-url">
+              <span>融资</span>
+              <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <i class="line"></i>
+                <a href="{%=redirect.main('/lld/fqddetail')%}" target="_blank">凤企贷</a>
+              </li>
+              <li>
+                <a href="{%=redirect.main('/lld/fjddetail')%}" target="_blank">凤加贷</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-menu-item">
+            <a href="{%=redirect.main('/aboutus/jianjie')%}" class="main-url">关于xxx</a>
+          </li>
+          <li class="main-menu-item">
+            <a href="{%=redirect.mall('/')%}" class="main-url">积分商城</a>
+          </li>
+        </ul>
+        <div class="user-info">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

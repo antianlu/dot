@@ -51,11 +51,15 @@ function InstallDots(o) {
     var exist = fname.match(/\.def|\.dot$/);
     if ('' + exist == '.def')
       fname = fname.substring(0, fname.indexOf('.'));
-    if (self.__includes[fname]) {
+    // if (self.__includes[fname]) {
+    //   return self.__includes[fname];
+    // }
+    // else
+    //   return self.__rendermodule[fname];
+    if (self.__includes[fname])
       return self.__includes[fname];
-    }
     else
-      return self.__rendermodule[fname];
+      return readdata(fname);
   };
 }
 
@@ -132,7 +136,7 @@ InstallDots.prototype.compilePath = function (path, includes) {
   if (data) {
     return doT.template(data,
       this.__settings || doT.templateSettings,
-      includes || this.__includes);
+      includes || copy(this.__includes));
   }
 };
 
@@ -140,17 +144,6 @@ InstallDots.prototype.compileDef = function () {
   var paths = this.__path, self = this;
   // support embed folder .def or .dot file(.dot must add suffix)
   // TODO:params
-  // this.__includes._include = function (fname) {
-  //   // fname: sub/hello,footer,sub/footer,sub/footer.def
-  //   var exist = fname.match(/\.def|\.dot$/);
-  //   if ('' + exist == '.def')
-  //     fname = fname.substring(0, fname.indexOf('.'));
-  //   if (self.__includes[fname]) {
-  //     return self.__includes[fname];
-  //   }
-  //   else
-  //     return self.__rendermodule[fname];
-  // };
   function doCompileDef(rootFolder, path_dir) {
     var sources = fs.readdirSync(path_dir),
       k, l, fname, name, kname;
@@ -285,6 +278,7 @@ doT.__express = function (config) {
           return cb(null, templateCaches[key]);
         }
       }
+      // console.log(key,options,'======')
       _html = dt[key](options);
     }
     return cb(null, _html);

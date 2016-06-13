@@ -1,5 +1,0 @@
-<div class="demo">
-    {{=it.demo}}
-    test dot include dot template.
-    <p>if use dot please add suffix .dot </p>
-</div>

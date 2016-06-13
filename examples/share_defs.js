@@ -5,8 +5,8 @@
 var n = 0;
 var share_defs = function () {
   var obj = {};
-  obj['common/footer'] = 'footer text ' + n++;
-  obj['common/head'] = 'head text ' + n++;
+  // obj['common/footer'] = 'footer text ' + n++;
+  // obj['common/head'] = 'head text ' + n++;
   return obj;
 };
 

@@ -1,14 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {{#def._include('common/head')}}
+    {%#def._include('common/head')%}
 </head>
 <body>
-{{#def._include('common/nav')}}
+{%#def._include('common/header')%}
 <div class="wrapper">
-    {{#def.main || ''}}
+    {%#def.main || ''%}
 </div>
-{{#def._include('common/footer')}}
-{{#def.script||''}}
+{%#def._include('common/footer')%}
+{%#def.script || ''%}
+<script>
+    var _fja = _fja || {};
+    _fja.q = _fja.q || [];
+    _fja.url = window.location.href;
+    (function () {
+        var fjr = document.createElement('script');
+        fjr.type = 'text/javascript';
+        fjr.async = true;
+        fjr.src = '/assets/js/src/analysis.min-v0.1.7.js';
+        fjr.onload = fjr.onreadystatechange = function () {
+            var state = fjr.readyState;
+            if (!state || state == 'loaded' || state == 'complete') {
+                fjr.onreadystatechange = null;
+                _fja.init();
+            }
+        };
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(fjr, s);
+    })();
+</script>
 </body>
 </html>

@@ -3,12 +3,106 @@
         <div class="footer-links clearfix">
             <div class="link_left">
                 <div class="col-xs-4">
-                    <a href="http://www.fengjr.com">凤凰金融</a>
-                    <a href="http://mall.fengjr.com">dot模板在凤凰金融积分商城的使用例子</a>
+                    <p class="first">关于我们</p>
+
+                    <p><a href="{%=redirect.main('/aboutus/jianjie')%}" rel="nofollow" target="_blank">xxx</a></p>
+
+                    <p><a href="{%=redirect.main('/aboutus/jianjie#section4')%}" rel="nofollow" target="_blank">股东实力</a></p>
+
+                    <!--<p><a href="{%=redirect.main('/aboutus/partner','ds')%}" rel="nofollow" target="_blank">合作伙伴</a></p>-->
+
+                    <p><a href="{%=redirect.main('/aboutus/honour')%}" rel="nofollow" target="_blank">社会荣誉</a></p>
+                    <!--<p><a href="{%=redirect.main('/aboutus/zhaopyc','ds')%}" rel="nofollow" target="_blank">招聘英才</a></p>-->
+                    <p><a href="{%=redirect.main('/cms/media')%}" rel="nofollow" target="_blank">媒体报道</a></p>
+
+                    <p><a href="{%=redirect.main('/aboutus/contactus')%}" target="_blank">联系我们</a></p>
+                </div>
+                <div class="col-xs-4">
+                    <p class="first"> 业务介绍</p>
+
+                    <p><a href="{%=redirect.main('/financing')%}" rel="nofollow" target="_blank">理财</a></p>
+                    <p><a href="{%=redirect.main('/zc')%}" rel="nofollow" target="_blank">众筹</a></p>
+                    <p><a href="{%=redirect.main('/lld')%}" rel="nofollow" target="_blank">融资</a></p>
+                    <p><a href="{%=redirect.mall('/')%}" rel="nofollow" target="_blank">积分商城</a></p>
+                </div>
+                <div class="col-xs-4"><p class="first"> 安全保障</p>
+
+                    <p><a href="{%=redirect.main('/safety')%}" rel="nofollow" target="_blank">安全保障措施</a></p>
+
+                    <p><a href="{%=redirect.main('/financing/jgdetail')%}" rel="nofollow" target="_blank">保障机构介绍</a></p>
+
+                    <p><a href="{%=redirect.main('/service/law')%}" rel="nofollow" target="_blank">法律法规说明</a></p>
+                </div>
+            </div>
+            <div class="link_middile">
+                <div class="col-xs-4">
+                    <img src="/assets/images/base/new_weixin.png">
+
+                    <p>关注微信，活动早知道</p>
+                </div>
+                <div class="col-xs-4">
+                    <img src="/assets/images/base/new_weibo.png">
+
+                    <p>关注微博，资讯天天读</p>
+                </div>
+                <div class="col-xs-4">
+                    <img src="/assets/images/base/app-bottom.png">
+
+                    <p>下载APP，理财随时随地</p>
+                </div>
+            </div>
+            <div class="link_right">
+                <div class="showcompony">
+                    <div class="show_btn">
+                        <div class="show_box">
+                            <ul style="padding-left:0;" class="select_box_list">
+                                <li style="list-style:none">
+                                    <a href="http://phtv.ifeng.com" target="_blank">凤凰卫视</a>
+                                </li>
+                                <li style="list-style:none"><a href="http://www.ifeng.com" target="_blank">凤凰网</a>
+                                </li>
+                                <li style="list-style:none"><a href="http://www.ifengweekly.com"
+                                                               target="_blank">周刊</a></li>
+                                <li style="list-style:none"><a href="http://uradio.ifeng.com"
+                                                               target="_blank">凤凰URadio</a></li>
+                                <li style="list-style:none"><a href="http://www.pmm.cn" target="_blank">凤凰都市传媒</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>凤凰金融客服热线</p>
+
+                    <p class="bignum">400 076 1166</p>
+
+                    <p>客服工作时间：9:00-21:00</p>
+
+                    <p><a href="{%=redirect.main('/service/feedback')%}" target="_blank">意见反馈</a></p>
                 </div>
             </div>
         </div>
         <div class="footer-bottom clearfix">
+            <div class="col-xs-6">
+            </div>
+            <div class="col-xs-4">
+                <div class="ui-footer-verification clearfix">
+                    <a href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1721473510" title="" target="_blank"
+                       class="ui-footer-verification-item kexin"></a>
+                    <a href="https://search.szfw.org/cert/l/CX20141107005870005552" title="“诚信网站”认证殊荣。"
+                       target="_blank" class="ui-footer-verification-item credibility"></a>
+                    <a href="https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=www.fengjr.com&amp;lang=zh_cn"
+                       title="凤凰金融已引入VeriSign ，。" target="_blank"
+                       class="ui-footer-verification-item norton"></a>
+                    <a href="http://gawa.bjchy.gov.cn/websearch/" title="凤凰金融已完成在公安机关的信息备案。" target="_blank"
+                       class="ui-footer-verification-item police"></a>
+                    <a href="https://ss.knet.cn/verifyseal.dll?sn=e15072411010559584wwxy000000&amp;amp;ct=df&amp;amp;a=1&amp;amp;pa=0.7701204186305404"
+                       target="_blank" class="ui-footer-verification-item knet"></a>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <p>xx</p>
+
+                <p>投资有风险，购买需谨慎</p>
+            </div>
         </div>
     </div>
 </div>

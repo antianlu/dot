@@ -1,12 +1,14 @@
-{{##def.base:
+{%##def.base:
     <meta charset="UTF-8">
-    <title>凤凰金融-{{#def.title||'积分商城'}}</title>
+    <title>xxx company-{%#def.title||'保险理财'%}</title>
     <meta name="description" content="xxx">
-    <meta name="keywords" content="">
-    {{#def.meta || ''}}
+    <meta name="keywords" content="xx">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    {%#def.meta || ''%}
     <script>
-        {{= it.state }}
+        {%= it.state || '' %}
     </script>
-    {{#def.head||''}}
-#}}
-{{#def.base}}
+    <link rel="stylesheet" href="/assets/css/base.css"/>
+    {%#def.head||''%}
+#%}
+{%#def.base%}
