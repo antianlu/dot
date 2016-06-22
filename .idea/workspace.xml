@@ -2,56 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d22df75-7785-49d5-85d9-9b243d08dae2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/app-bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/banner-rankup.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/bar-mobile-app-h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/bar-mobile-app.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/download_app.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/head_hongbao.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/head_hongbao.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/head_user_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/icon-ding.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/icon_color_404.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/icon_color_500.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/index_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/level1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/level2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/level3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/link-co.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/loginout-h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/loginout.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/mobile-phone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/new.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/new_app.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/new_ifeng.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/new_renzheng.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/new_weibo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/new_weixin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/newgif.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/nodata_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/top_bar_weixing.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/xiangxia_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/images/base/xiangxia_bg_y.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/public/assets/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/views/common/header.def" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/views/common/nav.def" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/views/demo.def" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/views/404.dot" afterPath="$PROJECT_DIR$/examples/views/common/404.dot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/views/500.dot" afterPath="$PROJECT_DIR$/examples/views/common/500.dot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dot.iml" afterPath="$PROJECT_DIR$/.idea/dot.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/app.js" afterPath="$PROJECT_DIR$/examples/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/routes/index.js" afterPath="$PROJECT_DIR$/examples/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/share_defs.js" afterPath="$PROJECT_DIR$/examples/share_defs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/views/common/footer.def" afterPath="$PROJECT_DIR$/examples/views/common/footer.def" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/views/common/head.def" afterPath="$PROJECT_DIR$/examples/views/common/head.def" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/views/common/layout.def" afterPath="$PROJECT_DIR$/examples/views/common/layout.def" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/views/common/header.def" afterPath="$PROJECT_DIR$/examples/views/common/header.def" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/views/index.dot" afterPath="$PROJECT_DIR$/examples/views/index.dot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="dot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -95,8 +50,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="150" column="4" selection-start-line="150" selection-start-column="4" selection-end-line="150" selection-end-column="4" />
+            <state relative-caret-position="195">
+              <caret line="253" column="50" selection-start-line="253" selection-start-column="50" selection-end-line="253" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -105,7 +60,7 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="437">
               <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding />
             </state>
@@ -122,10 +77,32 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.dot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/views/index.dot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/public/assets/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14225">
+            <state relative-caret-position="57">
               <caret line="3" column="44169" selection-start-line="3" selection-start-column="44169" selection-end-line="3" selection-end-column="44169" />
               <folding />
             </state>
@@ -163,21 +140,21 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/examples/views/demo.dot" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/examples/views/demo.def" />
         <option value="$PROJECT_DIR$/doT.js" />
         <option value="$PROJECT_DIR$/examples/views/demo.html" />
         <option value="$PROJECT_DIR$/examples/share_defs.js" />
         <option value="$PROJECT_DIR$/examples/routes/index.js" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/examples/views/common/layout.def" />
-        <option value="$PROJECT_DIR$/examples/app.js" />
         <option value="$PROJECT_DIR$/examples/views/common/head.def" />
         <option value="$PROJECT_DIR$/examples/public/assets/css/base.css" />
         <option value="$PROJECT_DIR$/examples/views/common/footer.def" />
-        <option value="$PROJECT_DIR$/examples/views/common/header.def" />
-        <option value="$PROJECT_DIR$/examples/views/index.dot" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/examples/views/common/header.def" />
+        <option value="$PROJECT_DIR$/examples/app.js" />
+        <option value="$PROJECT_DIR$/examples/views/index.dot" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -217,6 +194,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -245,20 +224,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -277,37 +242,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -326,17 +261,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -461,12 +390,13 @@
       <workItem from="1464868380543" duration="49403000" />
       <workItem from="1465375362197" duration="47000" />
       <workItem from="1465720979661" duration="7658000" />
-      <workItem from="1465817243742" duration="1363000" />
+      <workItem from="1465817243742" duration="1389000" />
+      <workItem from="1466591411215" duration="378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67128000" />
+    <option name="totallyTimeSpent" value="67532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="68" y="23" width="1125" height="777" extended-state="0" />
@@ -476,20 +406,20 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886904" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3542274" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35276967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39880952" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15474452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39880952" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -615,20 +545,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/views/500.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/views/404.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/views/500.dot" />
+    <entry file="file://$PROJECT_DIR$/examples/views/404.dot" />
     <entry file="file://$PROJECT_DIR$/dotbak/index-bak-1.1.4.js" />
     <entry file="file://$PROJECT_DIR$/examples/bin/www" />
     <entry file="file://$PROJECT_DIR$/examples/views/common1/nav.def" />
@@ -655,13 +573,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dotbak/doT.dev.js" />
     <entry file="file://$PROJECT_DIR$/dotbak/new-index.js" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/public/favicon.ico">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -679,56 +590,30 @@
     <entry file="file://$PROJECT_DIR$/examples/views/common1/layout.def" />
     <entry file="file://$PROJECT_DIR$/examples/views/common1/header.def" />
     <entry file="file://$PROJECT_DIR$/examples/views/common1/footer.def" />
-    <entry file="file://$PROJECT_DIR$/examples/views/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/views/common/userinfo.def">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/views/common/nav.def">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/views/demo.html" />
+    <entry file="file://$PROJECT_DIR$/examples/views/common/userinfo.def" />
+    <entry file="file://$PROJECT_DIR$/examples/views/common/nav.def" />
     <entry file="file://$PROJECT_DIR$/examples/views/common/404.dot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/views/demo.def">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/views/demo.def" />
     <entry file="file://$PROJECT_DIR$/examples/views/index.dot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/public/assets/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14225">
+        <state relative-caret-position="57">
           <caret line="3" column="44169" selection-start-line="3" selection-start-column="44169" selection-end-line="3" selection-end-column="44169" />
           <folding />
         </state>
@@ -738,7 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="91" selection-start-line="9" selection-start-column="91" selection-end-line="9" selection-end-column="91" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -746,6 +630,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/views/common/footer.def">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/share_defs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="253" column="50" selection-start-line="253" selection-start-column="50" selection-end-line="253" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/views/common/header.def">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -758,72 +687,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/views/common/footer.def">
+    <entry file="file://$PROJECT_DIR$/examples/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        <state relative-caret-position="152">
+          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/views/index.dot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="114">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/views/common/header.def">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="63" column="84" selection-start-line="63" selection-start-column="84" selection-end-line="63" selection-end-column="84" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/share_defs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="150" column="4" selection-start-line="150" selection-start-column="4" selection-end-line="150" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="19">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
           <folding />
         </state>
       </provider>

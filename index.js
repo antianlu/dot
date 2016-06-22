@@ -131,12 +131,12 @@ function readdata(path) {
  * @param path
  * @returns {*}
  */
-InstallDots.prototype.compilePath = function (path, includes) {
+InstallDots.prototype.compilePath = function (path) {
   var data = readdata(path);
   if (data) {
     return doT.template(data,
       this.__settings || doT.templateSettings,
-      includes || copy(this.__includes));
+      copy(this.__includes));
   }
 };
 
@@ -250,7 +250,8 @@ doT.__express = function (config) {
     filePath = filePath.replace(/\\/g, '/');
     if (!(/\.dot$/.test(filePath))) throw Error('extension must be is .dot');
     if ('development' == env) {
-      _html = _dot.compilePath(filePath, _dot.compileDef())(options);
+      _dot.compileDef();
+      _html = _dot.compilePath(filePath)(options);
     }
     else {
       if (Array.isArray(viewPaths)) {

@@ -39,7 +39,7 @@ dot.templateSettings = {
 // carefully the path order
 app.engine('dot', dot.__express({
   path: app.get('views'),// or string(one path)
-  env: 'production' || app.get('env'),
+  env: app.get('env'),
   share_defs: share_defs,// function : key/value  example {'common/footer':'<h1></h1>'
   cache: false// use static page,warming
   //templateSettings:templateSettings

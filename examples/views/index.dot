@@ -7,7 +7,8 @@
 #%}
 
 {%##def.main:
-<div class="div" style="height:300px;">This is index page</div>
+<div class="div" style="height:200px;">This is index page</div>
+<div class="demo">fixed development mode bug, test it</div>
 #%}
 
 {%##def.script:
