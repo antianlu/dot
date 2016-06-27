@@ -1,6 +1,6 @@
 {
   "name": "dot-extend",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Node.Js dot template, expanded the template include method of nested folders, static cache and use express 4.x.",
   "main": "example/app.js",
   "repository": {

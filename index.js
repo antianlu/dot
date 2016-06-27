@@ -139,6 +139,11 @@ InstallDots.prototype.compilePath = function (path) {
       copy(this.__includes));
   }
 };
+InstallDots.prototype.compileTemplate = function (data) {
+  return doT.template(data,
+    this.__settings || doT.templateSettings,
+    copy(this.__includes));
+}
 
 InstallDots.prototype.compileDef = function () {
   var paths = this.__path, self = this;
@@ -219,6 +224,8 @@ InstallDots.prototype.compileAll = function () {
   this.compileDef(), this.compileDot();
   return this.__rendermodule;
 };
+
+doT.InstallDots = InstallDots;
 
 /**
  * express doT engine
