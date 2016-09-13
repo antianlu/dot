@@ -61,3 +61,7 @@ render name must be use .dot file.
 #v1.1.5 fixed a bug
 
 fixed use {{#def.demo}} get demo.def bug.
+
+#v1.1.9
+Methods for searching the optimal path
+
