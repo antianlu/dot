@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.5.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.3
+3 info using node@v6.5.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/antianlu/Documents/Git/dot',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/antianlu/.npm/dot-extend/1.1.8/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/antianlu/.npm correctMkdir not in flight; initializing
+10 info lifecycle dot-extend@1.1.8~prepublish: dot-extend@1.1.8
+11 silly lifecycle dot-extend@1.1.8~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/antianlu/.npm/dot-extend/1.1.8/package.tgz',
+12 verbose tar pack   '/Users/antianlu/Documents/Git/dot' ]
+13 verbose tarball /Users/antianlu/.npm/dot-extend/1.1.8/package.tgz
+14 verbose folder /Users/antianlu/Documents/Git/dot
+15 verbose addLocalTarball adding from inside cache /Users/antianlu/.npm/dot-extend/1.1.8/package.tgz
+16 verbose correctMkdir /Users/antianlu/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd dot-extend@1.1.8
+18 verbose afterAdd /Users/antianlu/.npm/dot-extend/1.1.8/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/antianlu/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/antianlu/.npm/dot-extend/1.1.8/package/package.json written
+21 silly publish { name: 'dot-extend',
+21 silly publish   version: '1.1.8',
+21 silly publish   description: 'Node.Js dot template, expanded the template include method of nested folders, static cache and use express 4.x.',
+21 silly publish   main: 'example/app.js',
+21 silly publish   repository: { type: 'git', url: 'git+https://github.com/antianlu/dot.git' },
+21 silly publish   keywords: [ 'dot', 'template', 'node.js' ],
+21 silly publish   author: { name: 'antianlu' },
+21 silly publish   license: 'ISC',
+21 silly publish   scripts: { start: 'node ./example/app.js' },
+21 silly publish   dependencies:
+21 silly publish    { 'body-parser': '~1.12.4',
+21 silly publish      'cookie-parser': '~1.3.5',
+21 silly publish      debug: '~2.2.0',
+21 silly publish      express: '~4.12.4',
+21 silly publish      morgan: '~1.5.3',
+21 silly publish      'serve-favicon': '~2.2.1' },
+21 silly publish   bugs: { url: 'https://github.com/antianlu/dot/issues' },
+21 silly publish   homepage: 'https://github.com/antianlu/dot#readme',
+21 silly publish   readme: '# dot\nnode.js\'s dot.js template,expend use include embed some .def files , and use cache(static cache),express 4.x.x support.\n    \n## install\n    npm install dot-extend\n\n## How to use?\n\n    var dot = require(\'dot-extend\');\n\n    var app = express();\n\n\t// view engine setup\n\tapp.set(\'views\', path.join(__dirname, \'views\'));\n\tapp.set(\'view engine\', \'dot\');\n\n\t// config path params is templates path,you use array \t\tor string\n\t// Note that the path is order >=1.0.7\n\tapp.engine(\'dot\', dot.__express({\n\t\tpath:[path.join(__dirname,\'both\'),app.get(\'views\')],// or string(one path)\n\t\tcache: false// use static page,warming\n\t}));\n\t// Note the Chinese:\n\t// 1.0.7版本支持多路径模板，path配置可为数组（支持多路径指定）或字符串为一个路径下比如views，应为为完整路径。\n\n    \n## Note\n    \nIf you are using. Def as a template file, the nested folders, to start from the most superior to find files    \n如果使用.def作为模板文件时，嵌套文件夹的情况，要从最上级开始往下查找文件\n\n    {{#def._include(\'sub1/test1\')}} or sub1/test1.def\n\n    def._include(\'../sub1/test1\') // This is wrong\n\nIf you are using. The dot file as a nested template, please add. Dot suffix    \n如果文件作为嵌套模板，请加上.dot后缀名\n\n\t{{#def._include(\'demo.dot\')}}\n\n\n    \n## Advanced\n\nPlease see example senior use example, development and application in actual project.        \n请查看example的高级使用列子,在实际项目中的开发应用   \n\n## express route\n\nrender name must be use .dot file.\n    \n    app.get(\'/index\', function (req, res, next) {\n        res.render(\'index\', {title: \'index template\', content: \'index doT content render\'});\n    });\n    \n    app.get(\'/test\', function (req, res, next) {\n        res.render(\'sub/test\', {title: \'test template\', content: \'test doT content render\'});\n    });\n\n\n#v1.1.5 fixed a bug\n\nfixed use {{#def.demo}} get demo.def bug.\n\n#v1.1.9\nMethods for searching the optimal path\n\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '0365edc49a46930c13ea08b95453368cc5eb479b',
+21 silly publish   _id: 'dot-extend@1.1.8',
+21 silly publish   _shasum: 'cc22a5c4326eee8d2d043edf8d154693ae1c8167',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name dot-extend
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://10.255.52.3:8081/repository/fengjr-group/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'dot-extend',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'dot-extend',
+26 silly mapToRegistry   name: 'dot-extend',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://10.255.52.3:8081/repository/fengjr-group/dot-extend
+28 verbose publish registryBase http://10.255.52.3:8081/repository/fengjr-group/
+29 silly publish uploading /Users/antianlu/.npm/dot-extend/1.1.8/package.tgz
+30 verbose request uri http://10.255.52.3:8081/repository/fengjr-group/dot-extend
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 15:03:21
+33 verbose request using bearer token for auth
+34 verbose request id 7477aa26d6f99fb7
+35 http request PUT http://10.255.52.3:8081/repository/fengjr-group/dot-extend
+36 http 401 http://10.255.52.3:8081/repository/fengjr-group/dot-extend
+37 verbose headers { date: 'Mon, 26 Sep 2016 07:03:22 GMT',
+37 verbose headers   server: 'Nexus/3.0.2-02 (OSS)',
+37 verbose headers   'x-frame-options': 'SAMEORIGIN',
+37 verbose headers   'x-content-type-options': 'nosniff',
+37 verbose headers   'set-cookie': [ 'NXREMEMBERME=deleteMe; Path=/; Max-Age=0; Expires=Sun, 25-Sep-2016 07:03:22 GMT' ],
+37 verbose headers   'www-authenticate': 'BASIC realm="Sonatype Nexus Repository Manager"',
+37 verbose headers   'content-length': '0' }
+38 verbose request invalidating /Users/antianlu/.npm/10.255.52.3_8081/repository/fengjr-group/dot-extend on PUT
+39 error publish Failed PUT 401
+40 verbose stack Error: 401 Unauthorized
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:215:9)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 401
+42 verbose cwd /Users/antianlu/Documents/Git/dot
+43 error Darwin 15.6.0
+44 error argv "/usr/local/Cellar/node/6.5.0/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v6.5.0
+46 error npm  v3.10.3
+47 error code E401
+48 error 401 Unauthorized
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
