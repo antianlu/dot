@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var domains = {
-  "domain": "fengjr.inc",
+  "domain": "example.inc",
   "main": "http://local.example.inc:4000",
   "my": "http://mylocal.example.inc:4000",
   "pay": "http://paylocal.example.inc:4000",
