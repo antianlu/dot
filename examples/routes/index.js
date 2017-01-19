@@ -2,14 +2,14 @@ var express = require('express');
 var router = express.Router();
 
 var domains = {
-  "domain": "fengjr.inc",
-  "main": "http://local.fengjr.inc:4000",
-  "my": "http://mylocal.fengjr.inc:4000",
-  "pay": "http://paylocal.fengjr.inc:4000",
-  'mall': 'http://localmall.fengjr.inc:4008',
-  'zc': 'http://localzc.fengjr.inc:4009',
-  'bx': 'http://localbx.fengjr.inc:4010',
-  'fund': 'http://localfund.fengjr.inc:4011'
+  "domain": "example.inc",
+  "main": "http://local.example.inc:4000",
+  "my": "http://mylocal.example.inc:4000",
+  "pay": "http://paylocal.example.inc:4000",
+  'mall': 'http://localmall.example.inc:4008',
+  'zc': 'http://localzc.example.inc:4009',
+  'bx': 'http://localbx.example.inc:4010',
+  'fund': 'http://localfund.example.inc:4011'
 };
 global.domains = domains;
 global.domainUrl = function (path, branch) {
